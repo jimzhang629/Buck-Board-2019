@@ -4865,13 +4865,13 @@ fast soft-recovery controlled avalanche rectifier</description>
 </classes>
 <parts>
 <part name="U$1" library="12v6aBuckConverter" deviceset="12V6ABUCKCONVERTER" device=""/>
-<part name="F1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="FUSE" device="" package3d_urn="urn:adsk.eagle:package:26650/1" value="5A"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="66uF"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="10uF"/>
+<part name="F1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="FUSE" device="" package3d_urn="urn:adsk.eagle:package:26650/1" value="7.5A"/>
 <part name="U$2" library="REV BLDC" deviceset="SB50" device=""/>
 <part name="J1" library="B06B-HCMKK" deviceset="B06B-HCMKK" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BYV95" device="" package3d_urn="urn:adsk.eagle:package:43367/1"/>
 <part name="U$3" library="buck_1.6" deviceset="BUCK1.6A" device=""/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="66uF"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4883,14 +4883,6 @@ fast soft-recovery controlled avalanche rectifier</description>
 <attribute name="NAME" x="2.54" y="66.04" size="1.778" layer="95"/>
 <attribute name="VALUE" x="2.54" y="59.69" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="17.78" y="60.96" smashed="yes">
-<attribute name="NAME" x="18.796" y="61.595" size="1.778" layer="95"/>
-<attribute name="VALUE" x="13.716" y="56.769" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="G$1" x="55.88" y="53.34" smashed="yes">
-<attribute name="NAME" x="56.896" y="53.975" size="1.778" layer="95"/>
-<attribute name="VALUE" x="56.896" y="49.149" size="1.778" layer="96"/>
-</instance>
 <instance part="U$2" gate="G$1" x="-10.16" y="58.42" smashed="yes" rot="MR0"/>
 <instance part="J1" gate="G$1" x="71.12" y="55.88" smashed="yes">
 <attribute name="NAME" x="67.31" y="55.88" size="1.778" layer="95" align="center-left"/>
@@ -4898,6 +4890,14 @@ fast soft-recovery controlled avalanche rectifier</description>
 </instance>
 <instance part="D1" gate="1" x="63.5" y="63.5" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="20.32" y="33.02" smashed="yes"/>
+<instance part="C1" gate="G$1" x="17.78" y="60.96" smashed="yes">
+<attribute name="NAME" x="18.796" y="61.595" size="1.778" layer="95"/>
+<attribute name="VALUE" x="18.796" y="56.769" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="55.88" y="53.34" smashed="yes">
+<attribute name="NAME" x="56.896" y="53.975" size="1.778" layer="95"/>
+<attribute name="VALUE" x="56.896" y="49.149" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4917,15 +4917,15 @@ fast soft-recovery controlled avalanche rectifier</description>
 <pinref part="U$1" gate="G$1" pin="-S"/>
 <pinref part="U$1" gate="G$1" pin="-VOUT"/>
 <wire x1="45.72" y1="48.26" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="48.26" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <junction x="45.72" y="43.18"/>
-<wire x1="55.88" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<junction x="55.88" y="43.18"/>
+<wire x1="45.72" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="55.88" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="43.18" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
 <label x="60.96" y="43.18" size="1.778" layer="95"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="48.26" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<junction x="55.88" y="43.18"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4952,12 +4952,12 @@ fast soft-recovery controlled avalanche rectifier</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="-VIN"/>
 <wire x1="17.78" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="-"/>
 <wire x1="-2.54" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <junction x="17.78" y="55.88"/>
 </segment>
 </net>
@@ -4971,15 +4971,15 @@ fast soft-recovery controlled avalanche rectifier</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="S"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="63.5" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<junction x="55.88" y="63.5"/>
-<wire x1="55.88" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VOUT"/>
 <wire x1="45.72" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
 <junction x="45.72" y="63.5"/>
+<wire x1="55.88" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="63.5" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="55.88" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<junction x="55.88" y="63.5"/>
 </segment>
 </net>
 </nets>
