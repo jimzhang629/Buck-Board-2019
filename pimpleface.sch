@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13932,9 +13932,9 @@ Wickmann</description>
 <attribute name="NAME" x="95.25" y="59.69" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="97.79" y="57.15" size="1.778" layer="97"/>
 </instance>
-<instance part="TP7" gate="G$1" x="93.98" y="55.88" smashed="yes">
-<attribute name="NAME" x="92.71" y="57.15" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="95.25" y="54.61" size="1.778" layer="97"/>
+<instance part="TP7" gate="G$1" x="101.6" y="60.96" smashed="yes">
+<attribute name="NAME" x="100.33" y="62.23" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="102.87" y="59.69" size="1.778" layer="97"/>
 </instance>
 <instance part="TP8" gate="G$1" x="91.44" y="38.1" smashed="yes">
 <attribute name="NAME" x="90.17" y="39.37" size="1.778" layer="95"/>
@@ -13992,13 +13992,7 @@ Wickmann</description>
 <nets>
 <net name="LED" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="99.06" y1="63.5" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="TP7" gate="G$1" pin="TP"/>
-<junction x="93.98" y="53.34"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="60.96" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
@@ -14006,6 +14000,13 @@ Wickmann</description>
 <wire x1="76.2" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="66.04" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
 <junction x="78.74" y="63.5"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="91.44" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="53.34" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+<wire x1="99.06" y1="58.42" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
+<junction x="99.06" y="58.42"/>
 </segment>
 </net>
 <net name="6AGND" class="0">
@@ -14067,7 +14068,7 @@ Wickmann</description>
 <label x="0" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="+VOUT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="S"/>
 <wire x1="55.88" y1="63.5" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
@@ -14084,19 +14085,7 @@ Wickmann</description>
 <wire x1="66.04" y1="60.96" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
 <junction x="66.04" y="63.5"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="TP-12" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="10.16" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="9.08" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="BUCK150UH" gate="G$1" pin="2"/>
-<wire x1="17.46" y1="9.08" x2="22.86" y2="9.08" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="9.08" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="TP12" gate="G$1" pin="TP"/>
-<junction x="22.86" y="10.16"/>
+<label x="55.88" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TP13" class="0">
@@ -14237,6 +14226,20 @@ Wickmann</description>
 <label x="63.5" y="55.88" size="1.778" layer="95"/>
 <label x="96.52" y="33.02" size="1.778" layer="95" rot="R270"/>
 <label x="93.98" y="10.16" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="BUCK150UH" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="17.46" y1="9.08" x2="22.86" y2="9.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="9.08" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="10.16" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
+<junction x="22.86" y="7.62"/>
+<pinref part="TP12" gate="G$1" pin="TP"/>
+<wire x1="22.86" y1="10.16" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
