@@ -13843,7 +13843,7 @@ Wickmann</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.381" drill="0">
+<class number="0" name="default" width="0.762" drill="0">
 </class>
 <class number="1" name="Power" width="1.524" drill="0">
 </class>
@@ -13877,7 +13877,7 @@ Wickmann</description>
 <part name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="FUSE" device="SHK20L" package3d_urn="urn:adsk.eagle:package:14071/1"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="EL-" device="BI25-10AXIAL" package3d_urn="urn:adsk.eagle:package:23718/1" value="10uF"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100 ohm"/>
-<part name="U$4" library="cmnModeChoke1.2mH" deviceset="CMNMODECHOKE1.2MH" device=""/>
+<part name="CHOKEME" library="cmnModeChoke1.2mH" deviceset="CMNMODECHOKE1.2MH" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="390 ohm"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0603" package3d_urn="urn:adsk.eagle:package:15819/3"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100 ohm"/>
@@ -14005,7 +14005,7 @@ Wickmann</description>
 <attribute name="NAME" x="69.85" y="47.2186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="69.85" y="42.418" size="1.778" layer="96"/>
 </instance>
-<instance part="U$4" gate="G$1" x="-2.54" y="-20.32" smashed="yes"/>
+<instance part="CHOKEME" gate="G$1" x="-2.54" y="-20.32" smashed="yes"/>
 <instance part="R1" gate="G$1" x="83.82" y="27.94" smashed="yes">
 <attribute name="NAME" x="80.01" y="29.4386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="24.638" size="1.778" layer="96"/>
@@ -14144,7 +14144,7 @@ Wickmann</description>
 <pinref part="TP12" gate="G$1" pin="TP"/>
 <wire x1="-33.34" y1="-13.78" x2="-33.34" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-33.34" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
+<pinref part="CHOKEME" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-22.86" y="-15.24"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -14154,7 +14154,7 @@ Wickmann</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="4"/>
+<pinref part="CHOKEME" gate="G$1" pin="4"/>
 <wire x1="-12.7" y1="-25.4" x2="-22.86" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="-22.86" y="-25.4"/>
 <pinref part="BUCK150UH" gate="G$1" pin="3"/>
@@ -14262,7 +14262,7 @@ Wickmann</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
+<pinref part="CHOKEME" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="-15.24" x2="20.32" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="+VIN"/>
 <wire x1="20.32" y1="-15.24" x2="24.8" y2="-15.24" width="0.1524" layer="91"/>
@@ -14279,7 +14279,7 @@ Wickmann</description>
 <pinref part="U$3" gate="G$1" pin="-VIN"/>
 <wire x1="10.16" y1="-35.56" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="24.8" y1="-21.4" x2="10.16" y2="-21.4" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="CHOKEME" gate="G$1" pin="3"/>
 <wire x1="10.16" y1="-21.4" x2="10.16" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
