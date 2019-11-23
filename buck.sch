@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -13843,7 +13843,7 @@ Wickmann</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.381" drill="0">
 </class>
 <class number="1" name="Power" width="1.524" drill="0">
 </class>
@@ -14037,7 +14037,7 @@ Wickmann</description>
 <label x="127" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FUSE" class="0">
+<net name="FUSE" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="+"/>
 <wire x1="-43.18" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91"/>
@@ -14115,7 +14115,7 @@ Wickmann</description>
 <label x="15.24" y="-50.8" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="BAT_OUT" class="0">
+<net name="BAT_OUT" class="1">
 <segment>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <pinref part="F1" gate="G$1" pin="2"/>
@@ -14200,7 +14200,7 @@ Wickmann</description>
 <label x="88.9" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="6A_GND" class="0">
+<net name="6A_GND" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="93.98" y1="-25.4" x2="86.36" y2="-25.4" width="0.1524" layer="91"/>
@@ -14232,7 +14232,7 @@ Wickmann</description>
 <label x="58.42" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="6A_OUT" class="0">
+<net name="6A_OUT" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="114.3" y1="-22.86" x2="124.46" y2="-22.86" width="0.1524" layer="91"/>
